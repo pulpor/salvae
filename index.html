@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Salvaê — Design System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <symbol id="pin" viewBox="0 0 24 24">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+            </symbol>
+            <symbol id="tag" viewBox="0 0 24 24">
+                <path d="M12 2H2v10l9.3 9.3a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4L12 2Z" />
+                <path d="M7 7h.01" />
+            </symbol>
+            <symbol id="flt" viewBox="0 0 24 24">
+                <path d="M4 6h16M7 12h10M10 18h4" />
+            </symbol>
+            <symbol id="cal" viewBox="0 0 24 24">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <path d="M16 2v4M8 2v4M3 10h18m-11 6 2 2 4-4" />
+            </symbol>
+            <symbol id="bag" viewBox="0 0 24 24">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                <path d="M3 6h18M16 10a4 4 0 0 1-8 0" />
+            </symbol>
+            <symbol id="sto" viewBox="0 0 24 24">
+                <path d="M3 9l2-5h14l2 5M3 9h18M5 9v11h14V9M10 20v-6h4v6" />
+            </symbol>
+            <symbol id="clk" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+            </symbol>
+            <symbol id="lay" viewBox="0 0 24 24">
+                <path d="m12 2 10 5-10 5L2 7l10-5ZM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </symbol>
+            <symbol id="pct" viewBox="0 0 24 24">
+                <path d="M19 5 5 19" />
+                <circle cx="6.5" cy="6.5" r="2.5" />
+                <circle cx="17.5" cy="17.5" r="2.5" />
+            </symbol>
+            <symbol id="acc" viewBox="0 0 24 24">
+                <circle cx="12" cy="4" r="2" />
+                <path d="M5 8h14M12 8v6m-3 7 3-7 3 7" />
+            </symbol>
+            <symbol id="tap" viewBox="0 0 24 24">
+                <path d="M9 11V5a2 2 0 0 1 4 0v6l5 1v4a6 6 0 0 1-6 6h-1a6 6 0 0 1-5-3l-3-5a2 2 0 0 1 3-1l2 2" />
+            </symbol>
+            <symbol id="leaf" viewBox="0 0 24 24">
+                <path
+                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.500-4.800 10-10 10ZM2 21c0-3 1.900-5.400 5.100-6C9.500 14.500 12 13 13 12" />
+            </symbol>
+        </defs>
+    </svg>
+    <main id="st">
+
+        <section class="s on" style="background:linear-gradient(120deg,#f5faf6 55%,var(--g1));display:flex;flex-direction:column;justify-content:center">
+            <div style="display:flex;align-items:center;gap:14px;color:var(--g7);margin-bottom:28px"><svg class="i" width="24"
+                    height="24">
+                    <use href="#leaf" />
+                </svg><span style="font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase">DESIGN DE INTERAÇÃO · SENAC · 2026</span></div>
+            <div style="display:flex;align-items:center;gap:20px;margin-bottom:40px">
+                <img src="Logo.png" alt="Logo Salvaê" style="width:380px;flex:none">
+                <div style="flex:1">
+                    <h1 style="font-size:96px;line-height:0.95;font-weight:800;color:var(--g9);margin:0 0 16px;letter-spacing:-.02em">Salva<span style="color:var(--g5)">ê</span></h1>
+                    <div style="font-size:28px;font-weight:800;color:var(--g7);line-height:1.3;margin-bottom:18px">Mais economia para hoje.<br>Menos desperdício para amanhã.</div>
+                    <p style="font-size:16px;line-height:1.5">Design System para um aplicativo de resgate de produtos<br>próximos do vencimento.</p>
+                </div>
+                <img src="Inicio.png" alt="Tela inicial do aplicativo Salvaê"
+                    style="width:200px;flex:none;transform:rotate(4deg);filter:drop-shadow(0 20px 40px #0f3d2440);border-radius:36px">
+            </div>
+            <p style="font-size:15px;color:var(--ink)"><b>Anna Julia · Denis · Giulia · Leonardo · Samira</b><br><span style="color:var(--mut)">Análise e Desenvolvimento de Sistemas · Prof.ª Ma. Isabeli Ramos Neves</span></p>
+        </section>
+
+        <section class="s">
+            <div class="k">O problema</div>
+            <h2>Existe oferta. Existe demanda.<br><em>Falta o encontro.</em></h2>
+            <div class="row" style="margin-top:44px;align-items:stretch">
+                <div class="c" style="flex:1">
+                    <div class="th"><svg class="i" width="24" height="24">
+                            <use href="#sto" />
+                        </svg></div>
+                    <h3 style="font-size:26px;margin:16px 0 8px;color:var(--g9)">Restaurantes, padarias e mercados</h3>
+                    <p>Estoques que não giram no prazo. Descartar é o caminho mais simples — anunciar desconto parece
+                        risco de imagem.</p>
+                </div>
+                <div
+                    style="width:170px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center">
+                    <div style="font-size:15px;font-weight:800;color:#8a5200">sem canal simples<br>e confiável</div><svg
+                        width="150" height="20">
+                        <path d="M2 10h56M92 10h56" stroke="#e8920c" stroke-width="3" stroke-dasharray="3 6"
+                            stroke-linecap="round" />
+                        <path d="M66 3l12 14M78 3L66 17" stroke="#e8920c" stroke-width="3" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="c" style="flex:1">
+                    <div class="th"><svg class="i" width="24" height="24">
+                            <use href="#pct" />
+                        </svg></div>
+                    <h3 style="font-size:26px;margin:16px 0 8px;color:var(--g9)">Consumidores com orçamento curto</h3>
+                    <p>Reduzem a variedade das refeições por restrição orçamentária.</p>
+                </div>
+            </div>
+            <div
+                style="margin-top:34px;background:var(--g9);color:#fff;border-radius:18px;padding:22px 28px;font-size:22px;line-height:1.35">
+                O maior obstáculo é de <b style="color:#8fe3a8">percepção</b>: produto perto do vencimento tende a ser
+                confundido com produto impróprio. É um problema de comunicação da interface.</div>
+            <div class="ft"><span>Salvaê · Design de Interação · SENAC 2026</span><span>Anna Julia · Denis · Giulia
+                            · Leonardo · Samira</span></div>
+        </section>
+
+        <section class="s" style="padding:0">
+            <div class="row" style="height:100%;gap:0">
+                <div class="lucas-photo" style="width:330px;position:relative;flex:none"></div>
+                <div style="padding:48px 56px 48px 48px;flex:1">
+                    <div class="k">Conhecendo nosso usuário</div>
+                    <h2 style="font-size:46px">Enzo, 24 anos</h2>
+                    <p style="margin-top:8px;font-size:19px">Assistente administrativo · R$ 2.800/mês · mora sozinho<br>
+                        Quer economizar sem abrir mão de comer bem</p>
+                    <div class="row" style="margin-top:24px;gap:16px">
+                        <div class="c" style="flex:1;padding:20px;background:#fdf3f0"><b style="color:#a3402a">Dores</b>
+                            <p style="font-size:16px;margin-top:8px">Mercado caro · promoções sem economia real · tempo
+                                perdido procurando ofertas · receio de não saber o prazo de consumo</p>
+                        </div>
+                        <div class="c" style="flex:1;padding:20px;background:var(--g1)"><b
+                                style="color:var(--g7)">Motivações</b>
+                            <p style="font-size:16px;margin-top:8px">Descontos de 30%, 50%, 70%+ · ofertas perto de casa
+                                · saber a validade exata · filtrar por categoria e preço</p>
+                        </div>
+                    </div>
+                    <div class="c" style="margin-top:16px;padding:18px 22px"><b style="color:var(--g9)">Comportamento de
+                            compra</b>
+                        <p style="font-size:16px;margin-top:6px">Compra pouco, consome rápido, pesquisa promoções no
+                            celular. Aceita produto próximo da validade se estiver no prazo e com desconto real.</p>
+                    </div>
+                    <div
+                        style="margin-top:22px;font-size:26px;font-weight:800;color:var(--g7);line-height:1.25;border-left:5px solid var(--g5);padding-left:18px">
+                        “Se eu vou consumir hoje ou amanhã, não faz sentido pagar o preço cheio.”</div>
+                </div>
+            </div>
+            <div class="ft"><span style="color:#fff">Salvaê · Design de Interação · SENAC 2026</span><span>Anna Julia · Denis · Giulia
+                            · Leonardo · Samira</span></div>
+        </section>
+
+        <section class="s">
+            <div class="k">A proposta</div>
+            <h2>Salvaê conecta quem tem <em>com quem precisa</em></h2>
+            <div class="row" style="margin-top:40px;align-items:center;justify-content:center;gap:20px">
+                <div class="c" style="text-align:center;width:230px">
+                    <div class="th" style="margin:0 auto 10px"><svg class="i" width="24" height="24">
+                            <use href="#sto" />
+                        </svg></div><b>Restaurantes, padarias e mercados</b>
+                </div>
+                <svg width="120" height="30">
+                    <path d="M4 15h104m-12-10 12 10-12 10" stroke="#16a34a" stroke-width="3" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div
+                    style="background:var(--g7);color:#fff;border-radius:22px;padding:26px 30px;font-size:32px;font-weight:800">
+                    Salva<span style="color:#8fe3a8">ê</span></div>
+                <svg width="120" height="30">
+                    <path d="M4 15h104m-12-10 12 10-12 10" stroke="#16a34a" stroke-width="3" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="c" style="text-align:center;width:230px">
+                    <div class="th" style="margin:0 auto 10px"><svg class="i" width="24" height="24">
+                            <use href="#pct" />
+                        </svg></div><b>Consumidores que querem economizar</b>
+                </div>
+            </div>
+            <div class="row" style="margin-top:52px;gap:0;justify-content:space-between">
+                <div style="width:158px;text-align:center">
+                    <div
+                        style="width:68px;height:68px;border-radius:22px;background:var(--g1);color:var(--g7);display:grid;place-items:center;margin:0 auto 12px">
+                        <svg class="i" width="30" height="30">
+                            <use href="#pin" />
+                        </svg></div><b style="font-size:15px">Localização</b>
+                </div><svg width="24" height="20" style="margin-top:24px;flex:none">
+                    <path d="M2 10h18m-6-6 6 6-6 6" stroke="#16a34a" stroke-width="2.5" fill="none"
+                        stroke-linecap="round" />
+                </svg>
+                <div style="width:158px;text-align:center">
+                    <div
+                        style="width:68px;height:68px;border-radius:22px;background:var(--g1);color:var(--g7);display:grid;place-items:center;margin:0 auto 12px">
+                        <svg class="i" width="30" height="30">
+                            <use href="#tag" />
+                        </svg></div><b style="font-size:15px">Ofertas próximas</b>
+                </div><svg width="24" height="20" style="margin-top:24px;flex:none">
+                    <path d="M2 10h18m-6-6 6 6-6 6" stroke="#16a34a" stroke-width="2.5" fill="none"
+                        stroke-linecap="round" />
+                </svg>
+                <div style="width:158px;text-align:center">
+                    <div
+                        style="width:68px;height:68px;border-radius:22px;background:var(--g1);color:var(--g7);display:grid;place-items:center;margin:0 auto 12px">
+                        <svg class="i" width="30" height="30">
+                            <use href="#flt" />
+                        </svg></div><b style="font-size:15px">Filtros</b>
+                </div><svg width="24" height="20" style="margin-top:24px;flex:none">
+                    <path d="M2 10h18m-6-6 6 6-6 6" stroke="#16a34a" stroke-width="2.5" fill="none"
+                        stroke-linecap="round" />
+                </svg>
+                <div style="width:158px;text-align:center">
+                    <div
+                        style="width:68px;height:68px;border-radius:22px;background:var(--g7);color:#fff;display:grid;place-items:center;margin:0 auto 12px">
+                        <svg class="i" width="30" height="30">
+                            <use href="#cal" />
+                        </svg></div><b style="font-size:15px">Verificação da validade</b>
+                </div><svg width="24" height="20" style="margin-top:24px;flex:none">
+                    <path d="M2 10h18m-6-6 6 6-6 6" stroke="#16a34a" stroke-width="2.5" fill="none"
+                        stroke-linecap="round" />
+                </svg>
+                <div style="width:158px;text-align:center">
+                    <div
+                        style="width:68px;height:68px;border-radius:22px;background:var(--g1);color:var(--g7);display:grid;place-items:center;margin:0 auto 12px">
+                        <svg class="i" width="30" height="30">
+                            <use href="#bag" />
+                        </svg></div><b style="font-size:15px">Compra</b>
+                </div><svg width="24" height="20" style="margin-top:24px;flex:none">
+                    <path d="M2 10h18m-6-6 6 6-6 6" stroke="#16a34a" stroke-width="2.5" fill="none"
+                        stroke-linecap="round" />
+                </svg>
+                <div style="width:158px;text-align:center">
+                    <div
+                        style="width:68px;height:68px;border-radius:22px;background:var(--g1);color:var(--g7);display:grid;place-items:center;margin:0 auto 12px">
+                        <svg class="i" width="30" height="30">
+                            <use href="#sto" />
+                        </svg></div><b style="font-size:15px">Retirada no estabelecimento</b>
+                </div>
+            </div>
+            <p style="margin-top:46px;text-align:center;font-size:16px">Jornada idealizada do aplicativo — proposta de
+                produto, ainda não desenvolvido.</p>
+            <div class="ft"><span>Salvaê · Design de Interação · SENAC 2026</span><span>Anna Julia · Denis · Giulia
+                            · Leonardo · Samira</span></div>
+        </section>
+
+        <section class="s">
+            <div class="k">O desafio de Design de Interação</div>
+            <h2 style="max-width:760px">Não basta mostrar desconto. É preciso <em>comunicar confiança.</em></h2>
+            <div class="row" style="margin-top:28px;gap:14px;padding-right:300px">
+                <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:start">
+                    <div class="c" style="padding:16px 18px;display:flex;gap:12px;align-items:center;">
+                        <div class="th" style="width:42px;height:42px"><svg class="i" width="22" height="22">
+                                <use href="#clk" />
+                            </svg></div><b style="font-size:17px">Validade clara</b>
+                    </div>
+                    <div class="c" style="padding:16px 18px;display:flex;gap:12px;align-items:center;">
+                        <div class="th" style="width:42px;height:42px"><svg class="i" width="22" height="22">
+                                <use href="#lay" />
+                            </svg></div><b style="font-size:17px">Hierarquia visual</b>
+                    </div>
+                    <div class="c" style="padding:16px 18px;display:flex;gap:12px;align-items:center;">
+                        <div class="th" style="width:42px;height:42px"><svg class="i" width="22" height="22">
+                                <use href="#pct" />
+                            </svg></div><b style="font-size:17px">Desconto comunicado</b>
+                    </div>
+                    <div class="c" style="padding:16px 18px;display:flex;gap:12px;align-items:center;">
+                        <div class="th" style="width:42px;height:42px"><svg class="i" width="22" height="22">
+                                <use href="#acc" />
+                            </svg></div><b style="font-size:17px">Acessibilidade</b>
+                    </div>
+                    <div class="c"
+                        style="padding:16px 18px;display:flex;gap:12px;align-items:center;grid-column:span 2">
+                        <div class="th" style="width:42px;height:42px"><svg class="i" width="22" height="22">
+                                <use href="#tap" />
+                            </svg></div><b style="font-size:17px">Experiência intuitiva</b>
+                    </div>
+                </div>
+            </div>
+            <img src="explorar.png" alt="Tela de exploração de ofertas do aplicativo Salvaê"
+                style="position:absolute;top:56px;right:72px;height:580px;width:auto;max-width:280px;object-fit:contain;border-radius:38px;filter:drop-shadow(0 16px 32px #0f3d2440)">
+            <div class="ft"><span>Salvaê · Design de Interação · SENAC 2026</span><span>Anna Julia · Denis · Giulia
+                            · Leonardo · Samira</span></div>
+        </section>
+
+        <section class="s">
+            <div class="k">O que vamos desenvolver</div>
+            <h2>Um <em>design system básico</em> aplicado a 4–5 telas no Figma</h2>
+            <div style="margin-top:12px"><span class="tag">Entregável acadêmico — não é o aplicativo funcional</span>
+            </div>
+            <div class="row" style="margin-top:26px;flex-wrap:wrap;gap:18px">
+                <div class="c" style="width:360px"><b>Paleta de cores</b>
+                    <div class="row" style="gap:8px;margin-top:14px"><i
+                            style="flex:1;height:44px;border-radius:10px;background:var(--g9)"></i><i
+                            style="flex:1;height:44px;border-radius:10px;background:var(--g5)"></i><i
+                            style="flex:1;height:44px;border-radius:10px;background:var(--g1)"></i><i
+                            style="flex:1;height:44px;border-radius:10px;background:var(--am)"></i></div>
+                    <p style="font-size:14px;margin-top:8px">Função semântica de cada cor</p>
+                </div>
+                <div class="c" style="width:360px"><b>Escala tipográfica</b>
+                    <div style="margin-top:6px;line-height:1.1;color:var(--g9)"><span
+                            style="font-size:40px;font-weight:800">Aa</span> <span
+                            style="font-size:26px;font-weight:600">Aa</span> <span style="font-size:16px">Aa</span>
+                    </div>
+                </div>
+                <div class="c" style="width:360px"><b>Componentes e tokens</b>
+                    <p style="font-size:15px;margin-top:8px">Botões, cards, filtros, selos de validade — especificados
+                        para reuso</p>
+                </div>
+                <div class="c" style="width:360px"><b>WCAG 2.1 nível AA</b>
+                    <p style="font-size:15px;margin-top:8px">Contraste, alvo de toque e informação que não depende só da
+                        cor</p>
+                </div>
+                <div class="c" style="width:360px;background:var(--g9);color:#fff"><b>4–5 telas no Figma</b>
+                    <p style="font-size:15px;margin-top:8px;color:#bfe9cc">Layout aplicando o sistema</p>
+                </div>
+                <div class="c" style="width:360px"><b>Identidade</b>
+                    <p style="font-size:15px;margin-top:8px">Posicionamento, personalidade e tom de voz da interface</p>
+                </div>
+            </div>
+            <div class="ft"><span>Salvaê · Design de Interação · SENAC 2026</span><span>Anna Julia · Denis · Giulia
+                            · Leonardo · Samira</span></div>
+        </section>
+
+        <section class="s" style="background:linear-gradient(160deg,var(--g9),var(--g7));color:#fff">
+            <div class="k" style="color:#8fe3a8">Impacto e continuidade</div>
+            <h2 style="color:#fff">Economizar, consumir com consciência, <em style="color:#8fe3a8">desperdiçar
+                    menos.</em></h2>
+            <div class="row" style="margin-top:44px;gap:18px">
+                <div class="c" style="flex:1;background:#ffffff14;box-shadow:none;color:#fff">
+                    <div style="color:#8fe3a8"><svg class="i" width="24" height="24">
+                            <use href="#pct" />
+                        </svg></div>
+                    <p style="color:#e3f6e9;margin-top:10px">Facilitar o acesso a alimentos com preços reduzidos</p>
+                </div>
+                <div class="c" style="flex:1;background:#ffffff14;box-shadow:none">
+                    <div style="color:#8fe3a8"><svg class="i" width="24" height="24">
+                            <use href="#leaf" />
+                        </svg></div>
+                    <p style="color:#e3f6e9;margin-top:10px">Incentivar o consumo consciente</p>
+                </div>
+                <div class="c" style="flex:1;background:#ffffff14;box-shadow:none">
+                    <div style="color:#8fe3a8"><svg class="i" width="24" height="24">
+                            <use href="#bag" />
+                        </svg></div>
+                    <p style="color:#e3f6e9;margin-top:10px">Contribuir para a redução do desperdício</p>
+                </div>
+            </div>
+            <div
+                style="margin-top:34px;background:#fff;color:var(--g9);border-radius:18px;padding:22px 28px;font-size:21px;font-weight:600">
+                Próximo passo: o design system será a base da implementação do Salvaê no <b>Projeto Integrador</b>.
+            </div>
+            <div style="margin-top:40px;font-size:34px;font-weight:800">“Economizar também é uma forma de transformar.”
+            </div>
+            <div class="ft"><span style="color:#fff">Salvaê · Design de Interação · SENAC 2026</span><span>Anna Julia · Denis · Giulia
+                            · Leonardo · Samira</span></div>
+        </section>
+    </main>
+    <div class="nav"><button id="pv">←</button><span id="n"></span><button id="nx">→</button></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
