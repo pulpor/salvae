@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <canvas id="bgfx"></canvas>
     <svg width="0" height="0" style="position:absolute">
         <defs>
             <symbol id="pin" viewBox="0 0 24 24">
@@ -62,7 +63,7 @@
     </svg>
     <main id="st">
 
-        <section class="s on" style="background:linear-gradient(120deg,#f5faf6 55%,var(--g1));display:flex;flex-direction:column;justify-content:center">
+        <section class="s on hero" style="background:linear-gradient(120deg,rgba(245,250,246,.78) 55%,rgba(220,243,226,.78))">
             <div style="display:flex;align-items:center;gap:14px;color:var(--g7);margin-bottom:28px"><svg class="i" width="24"
                     height="24">
                     <use href="#leaf" />
@@ -122,7 +123,7 @@
                 <div class="lucas-photo" style="width:330px;position:relative;flex:none"></div>
                 <div style="padding:48px 56px 48px 48px;flex:1">
                     <div class="k">Conhecendo nosso usuário</div>
-                    <h2 style="font-size:46px">Enzo, 24 anos</h2>
+                    <h2 style="font-size:46px">Carlos, 24 anos</h2>
                     <p style="margin-top:8px;font-size:19px">Assistente administrativo · R$ 2.800/mês · mora sozinho<br>
                         Quer economizar sem abrir mão de comer bem</p>
                     <div class="row" style="margin-top:24px;gap:16px">
@@ -319,7 +320,7 @@
                             · Leonardo · Samira</span></div>
         </section>
 
-        <section class="s" style="background:linear-gradient(160deg,var(--g9),var(--g7));color:#fff">
+        <section class="s" style="background:linear-gradient(160deg,rgba(15,61,36,.85),rgba(22,101,52,.85));color:#fff">
             <div class="k" style="color:#8fe3a8">Impacto e continuidade</div>
             <h2 style="color:#fff">Economizar, consumir com consciência, <em style="color:#8fe3a8">desperdiçar
                     menos.</em></h2>
@@ -354,6 +355,7 @@
         </section>
     </main>
     <div class="nav"><button id="pv">←</button><span id="n"></span><button id="nx">→</button></div>
+    <script src="particles.js"></script>
     <script src="script.js"></script>
 </body>
 
