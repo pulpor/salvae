@@ -1,7 +1,7 @@
 ﻿// Fundo interativo de partículas, fora do palco de slides (implementação própria, sem libs externas)
 (function () {
-    const GREENS = ['#16a34a', '#166534', '#8fe3a8', '#dcf3e2'];
-    const ORANGES = ['#e8a070', '#c47a50', '#f5c6a0', '#fde4d0'];
+    const COLORS = ['#b47a5a', '#96614b', '#d5aa8b', '#58755e'];
+    const WARM_COLORS = ['#a97659', '#b47a5a', '#d5aa8b', '#738d72'];
     const warm = () => document.body.classList.contains('warm');
     const DENSITY = 11000; // px² por partícula — monitores widescreen geram mais partículas
     const MIN_COUNT = 90, MAX_COUNT = 260;
@@ -31,7 +31,7 @@
             vx: (Math.random() - .5) * .3,
             vy: (Math.random() - .5) * .3,
             r: Math.random() * 1.8 + 1,
-            k: Math.floor(Math.random() * GREENS.length)
+            k: Math.floor(Math.random() * COLORS.length)
         }));
     }
 
@@ -54,7 +54,7 @@
                 const dx = a.x - b.x, dy = a.y - b.y, d = Math.hypot(dx, dy);
                 if (d < LINK_DIST) {
                     ctx.globalAlpha = (1 - d / LINK_DIST) * .25;
-                    ctx.strokeStyle = warm() ? '#c47a50' : '#166534';
+                    ctx.strokeStyle = warm() ? '#96614b' : '#825640';
                     ctx.lineWidth = 1;
                     ctx.beginPath();
                     ctx.moveTo(a.x, a.y);
@@ -67,7 +67,7 @@
         for (const p of particles) {
             ctx.beginPath();
             ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-            ctx.fillStyle = (warm() ? ORANGES : GREENS)[p.k];
+            ctx.fillStyle = (warm() ? WARM_COLORS : COLORS)[p.k];
             ctx.fill();
         }
         ctx.globalAlpha = 1;
